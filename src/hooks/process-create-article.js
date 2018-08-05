@@ -3,10 +3,9 @@
 const moment = require('moment');
 
 module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
-  return function (hook) {
-    const data = hook.data;
+  return async context => {
+    context.data.createdAt = moment().valueOf();
 
-    hook.data = Object.assign({}, data, { createdAt: moment().valueOf() });
-    return Promise.resolve(hook);
+    return context;
   };
 };

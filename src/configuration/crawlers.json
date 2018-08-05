@@ -1,0 +1,221 @@
+[
+    {
+        "categories": [
+            "Vs4ZI0f6jCX6VYsq",
+            "s6D7bgdHCRxIi7Wy"
+        ],
+        "_id": "7FQuyZUIZzkzJSU5",
+        "tags": [
+            {
+                "selector": "h3",
+                "name": "title"
+            },
+            {
+                "type": "link",
+                "selector": "h3 a",
+                "name": "link"
+            },
+            {
+                "selector": "p span.newsDate",
+                "format": "dddd, MMMM D, YYYY",
+                "type": "datetime",
+                "name": "datetime"
+            }
+        ],
+        "articleSelector": "article",
+        "url": "http://www.markknopfler.com/"
+    },
+    {
+        "_id": "7UwCmPRvxlNn4Oan",
+        "tags": [
+            {
+                "selector": ".post-module-content header h2",
+                "name": "title"
+            },
+            {
+                "type": "link",
+                "selector": ".post-module-content header h2 a",
+                "name": "link"
+            },
+            {
+                "selector": ".post-module-content .author-date .posted-on a time",
+                "format": "DD/MM/YYYY",
+                "type": "datetime",
+                "name": "datetime"
+            }
+        ],
+        "articleSelector": "article.post-module",
+        "url": "https://vivaldi.com/blog/snapshots/"
+    },
+    {
+        "_id": "LhgT20AkAwvh5fww",
+        "tags": [
+            {
+                "selector": "header h3",
+                "name": "title"
+            },
+            {
+                "type": "link",
+                "selector": "header h3 a",
+                "name": "link"
+            },
+            {
+                "before": {
+                    "pattern": "^\\d{1,2}.\\d{1,2}",
+                    "action": "regex"
+                },
+                "format": "D.M",
+                "selector": "header h3 a",
+                "type": "datetime",
+                "name": "datetime"
+            }
+        ],
+        "categories": [
+            "y65Q7XO4hrSm1Exi"
+        ],
+        "articleSelector": "article",
+        "url": "http://oceanen.com/"
+    },
+    {
+        "_id": "UlfflmDOF1qsF2Eq",
+        "tags": [
+            {
+                "selector": ".card__box__content .card__heading",
+                "name": "title"
+            },
+            {
+                "type": "link",
+                "selector": "a.card__box--link",
+                "name": "link"
+            },
+            {
+                "locale": "sv",
+                "format": "D MMMM YYYY, HH:mm",
+                "selector": ".card__box__content .card__list-item--icon-calendar",
+                "type": "datetime",
+                "name": "datetime"
+            }
+        ],
+        "categories": [
+            "y65Q7XO4hrSm1Exi"
+        ],
+        "articleSelector": "main li.card-grid__list-item",
+        "url": "https://www.liseberg.se/evenemang/alla/?typ-av-evenemang=konsert"
+    },
+    {
+        "_id": "cKkvHM9OemqZKG8W",
+        "tags": [
+            {
+                "selector": "h4",
+                "name": "title"
+            },
+            {
+                "type": "link",
+                "selector": "h4 a",
+                "name": "link"
+            },
+            {
+                "before": {
+                    "flags": "gi",
+                    "pattern": "\\d{1,2} \\w+",
+                    "action": "regex"
+                },
+                "selector": ".time-ago",
+                "format": "subtract",
+                "type": "datetime",
+                "name": "datetime"
+            }
+        ],
+        "categories": [
+            "XcmUKIBVAtpSfwU2"
+        ],
+        "articleSelector": ".node-article",
+        "url": "http://eune.leagueoflegends.com/en/news/"
+    },
+    {
+        "categories": [
+            "XcmUKIBVAtpSfwU2",
+            "s6D7bgdHCRxIi7Wy"
+        ],
+        "_id": "cMyi5MhFjGiiHgMP",
+        "tags": [
+            {
+                "selector": ".header",
+                "name": "title"
+            },
+            {
+                "type": "link",
+                "selector": ".header a",
+                "name": "link"
+            },
+            {
+                "before": {
+                    "pattern": "\\d{4}/\\d{2}/\\d{2}",
+                    "action": "regex"
+                },
+                "format": "YYYY/MM/DD",
+                "selector": ".post-meta",
+                "type": "datetime",
+                "name": "datetime"
+            }
+        ],
+        "articleSelector": "#posts .post",
+        "url": "http://www.secretsofgrindea.com/index.php/dev-blog"
+    },
+    {
+        "_id": "uQ7kD3lzg5Zc7gvX",
+        "tags": [
+            {
+                "selector": "h3",
+                "name": "title"
+            },
+            {
+                "type": "link",
+                "selector": ".postArticle-readMore a",
+                "name": "link"
+            },
+            {
+                "selector": ".postMetaInline-authorLockup time",
+                "format": "MMM D",
+                "type": "datetime",
+                "name": "datetime"
+            }
+        ],
+        "categories": [
+            "YlK08JW4DQv1fHYD"
+        ],
+        "articleSelector": ".postArticle",
+        "url": "https://medium.com/@dan_abramov"
+    },
+    {
+        "_id": "w84kFzM7HiRjc9ux",
+        "tags": [
+            {
+                "selector": ".desc h2",
+                "name": "title"
+            },
+            {
+                "type": "link",
+                "selector": ".desc a",
+                "name": "link"
+            },
+            {
+                "locale": "sv",
+                "before": {
+                    "flags": "i",
+                    "pattern": "[^ ]+ \\d{1,2} \\w+ \\d{2}:\\d{2}",
+                    "action": "regex"
+                },
+                "selector": ".desc time",
+                "format": "dddd D MMMM HH:mm",
+                "type": "datetime",
+                "name": "datetime"
+            }
+        ],
+        "categories": [
+            "y65Q7XO4hrSm1Exi"
+        ],
+        "articleSelector": "#eventlist .event",
+        "url": "http://pustervik.nu/"
+    }
+]

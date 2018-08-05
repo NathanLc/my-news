@@ -100,7 +100,7 @@ const Crawler = (crawlerConfig = {}) => {
       }
     })
       .catch(function (err) {
-        console.warn(errorGeneric + 'getHtml:', err);
+        console.warn(errorGeneric + 'getHtml:', err.message);
       });
   };
 

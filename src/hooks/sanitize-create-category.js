@@ -1,12 +1,12 @@
 // Use this hook to manipulate incoming or outgoing data.
 // For more information on hooks see: http://docs.feathersjs.com/api/hooks.html
-const { BadRequest } = require('feathers-errors');
+const { BadRequest } = require('@feathersjs/errors');
 
 module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
-  return function (hook) {
-    const data = hook.data;
+  return async context => {
+    const { data } = context;
     const errors = {};
-    
+
     if (!data.shortname) {
       errors.shortname = 'Shortname is missing.';
     }
@@ -20,6 +20,6 @@ module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
       });
     }
 
-    return Promise.resolve(hook);
+    return context;
   };
 };
